@@ -9,6 +9,16 @@ html, body{
     width: 100%;
     font-family: 'Plain Light';
 }
+#crsr{
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    border: 1px solid #ffffffbe;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+}
 #loader{
     height: 100%;
     width: 100%;
@@ -20,6 +30,7 @@ html, body{
 .line{
     height: fit-content;
     overflow: hidden;
+    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: start;
@@ -52,7 +63,7 @@ html, body{
     font-size: 5vw;
     text-transform: uppercase;
     opacity: 0;
-    animation-duration: 1s;
+    animation-duration: 1.1s;
     animation-iteration-count: infinite;
 }
 #main{
@@ -63,6 +74,45 @@ html, body{
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+#page1 nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 5.5vw;
+}
+#page1 nav #nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3vw;
+}
+#nav-right h4{
+    font-weight: 500;
+}
+.hero{
+    /* background-color: red; */
+    height: fit-content;
+    width: 72%;
+    margin-left: 28%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.hero:nth-child(1){
+    margin-top: 15vh;
+
+}
+.hero h1, .hero h2, .hero h3{
+    font-size: 7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+}
+.hero h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    font-weight: 500;
 }
 @keyframes anime {
     0%{
