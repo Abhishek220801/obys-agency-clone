@@ -240,6 +240,57 @@ body{
 #page5{
     min-height: 100vh;
     width: 100%;
+    position: relative;
+}
+.elem{
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: -2vw;
+}
+.elem h1{
+    /* background-color: red; */
+    font-size: 7vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    display: inline-block;
+    color: transparent;
+    margin-right: 16px;
+    animation-name: marquebanner;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.elem2{
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: -2vw;
+}
+.elem2 h1{
+    /* background-color: red; */
+    font-size: 7vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    display: inline-block;
+    color: transparent;
+    margin-right: 16px;
+    transform: translateX(-100% -20px);
+    animation-name: marquebanner;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.elem span{
+    font-style: italic;
+    font-family: "silk serif";
+    color: transparent;
+}
+.elem2 span{
+    font-style: italic;
+    font-family: "silk serif";
+    color: transparent;
 }
 @keyframes anime {
     0%{
@@ -269,5 +320,13 @@ body{
         -webkit-text-stroke: 1px #fff;
         font-weight: 500;
         opacity: 0;
+    }
+}
+@keyframes marquebanner{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
     }
 }
